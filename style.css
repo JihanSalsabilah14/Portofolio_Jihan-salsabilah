@@ -46,7 +46,7 @@ body {
 .aboutme {
   margin-left: 20px;
   max-width: 600px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .details h1 {
@@ -235,21 +235,21 @@ ul {
 }
 
 .details {
-  text-align: center; 
+  text-align: center;
   padding: 20px;
 }
 
 .details img {
-  width: 100%; 
-  max-width: 1000px; 
-  height: auto; 
-  display: inline-block; 
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: inline-block;
 }
 
 /* Responsif untuk layar besar */
 @media (min-width: 1024px) {
   .details img {
-    max-width: 1200px; 
+    max-width: 1200px;
   }
 }
 
@@ -311,7 +311,7 @@ ul li {
 
 /* Footer */
 .footer {
-  background-color: #f3f4f6;
+  background-color: #ffffff;
   padding: 24px;
   text-align: center;
 }
@@ -339,13 +339,13 @@ ul li {
 /* Responsif untuk gambar responsif */
 .responsive-images {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .responsive-images img {
   height: auto;
-  width: calc(33.33% - 20px); 
+  width: calc(33.33% - 20px);
   margin: 10px;
 }
 
@@ -364,9 +364,9 @@ ul li {
 }
 
 .responsive-image {
-  width: 100%; 
+  width: 100%;
   height: auto;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -374,7 +374,7 @@ ul li {
 @media (max-width: 768px) {
   .responsive-image {
     width: 90%;
-    max-width: 90%; 
+    max-width: 90%;
   }
 }
 
@@ -382,6 +382,6 @@ ul li {
 @media (max-width: 480px) {
   .responsive-image {
     width: 80%;
-    max-width: 80%; 
+    max-width: 80%;
   }
 }
