@@ -1,0 +1,387 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 70px; /* Pastikan ada padding atas untuk konten di bawah navbar */
+}
+
+/* Home */
+#Home {
+  padding-top: 6rem;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+/* About Section */
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.profile-pic {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: auto; /* Mengubah height menjadi auto untuk responsivitas */
+}
+
+.aboutme {
+  margin-left: 20px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.details h1 {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #2d3748;
+}
+
+.details p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Contact */
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #4a5568;
+}
+
+.contact ul li i {
+  margin-right: 8px;
+}
+
+.contact ul li a {
+  color: #4a5568;
+  text-decoration: none;
+}
+
+/* Resume */
+.resume {
+  margin: 0 auto;
+  padding: 100px;
+  margin-bottom: -100px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  margin: 20px 0;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #2d3748;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.timeline-item .dot {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 2px solid #2d3748;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+  top: 6px;
+}
+
+.timeline-item p {
+  margin-left: 30px;
+}
+
+/* Skill */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skills-container a img {
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skills-container a img:hover {
+  transform: scale(1.1);
+}
+
+/* Project Section */
+.project-section-wrapper {
+  width: 100%;
+  background-color: #d3d3d3;
+  padding: 0;
+  margin: 0;
+}
+
+.project-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-section h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Playfair Display";
+}
+
+.project-section .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-section .content2 {
+  flex-direction: row-reverse;
+}
+
+.project-img {
+  width: 600px;
+  height: auto; /* Mengubah height menjadi auto untuk responsivitas */
+}
+
+.project-section p a {
+  text-decoration: underline;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+
+.website {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: -50px;
+  flex-direction: row;
+}
+
+.centered-image {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.centered-image img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+.details {
+  text-align: center; 
+  padding: 20px;
+}
+
+.details img {
+  width: 100%; 
+  max-width: 1000px; 
+  height: auto; 
+  display: inline-block; 
+}
+
+/* Responsif untuk layar besar */
+@media (min-width: 1024px) {
+  .details img {
+    max-width: 1200px; 
+  }
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .details img,
+  .profile-pic {
+    width: 90%; /* Menyesuaikan untuk layar tablet */
+    height: auto;
+  }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+  .details img,
+  .profile-pic {
+    width: 85%; /* Lebih sempit di ponsel */
+    height: auto;
+  }
+}
+
+/* Pengalaman Organisasi */
+.pengalamanorganisasi {
+  background-color: #d3d3d3;
+  padding: 70px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.date {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #f3f4f6;
+  padding: 24px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.footer p {
+  margin-top: 8px;
+}
+
+.social-icons {
+  margin-top: 16px;
+}
+
+.social-icons a {
+  color: #2d3748;
+  font-size: 1.25rem;
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+/* Responsif untuk gambar responsif */
+.responsive-images {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+.responsive-images img {
+  height: auto;
+  width: calc(33.33% - 20px); 
+  margin: 10px;
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .responsive-images img {
+    width: calc(45% - 20px);
+  }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+  .responsive-images img {
+    width: calc(90% - 20px);
+  }
+}
+
+.responsive-image {
+  width: 100%; 
+  height: auto;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .responsive-image {
+    width: 90%;
+    max-width: 90%; 
+  }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+  .responsive-image {
+    width: 80%;
+    max-width: 80%; 
+  }
+}
